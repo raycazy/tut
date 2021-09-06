@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/CSS/style.css">
+
+<style>
+    * {
+        font-family: 'Poppins';
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(/Img/damir-spanic-BzJO7pO1K3g-unsplash.jpg);
+        height: 4000px;
+        background-repeat: no-repeat;
+        /* background-size: 100%; */ 
+        background-size: contain;
+        color: white; box-sizing: border-box;
+    }
+
+    header {
+        font-size: 14px;
+        font-weight: lighter; 
+    }
+
+    .left {
+        /* border: 1px solid white; */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 8px;
+    }
+
+    .mid {
+        /* border: 1px solid white; */
+        width: 350px;
+        margin: 10px auto;
+    }
+
+    .right {
+        /* border: 1px solid white; */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        margin: 5px 0px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block; width: 80px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        font-weight: bold;
+    }
+
+    .left img {
+        /* filter: invert(100%); */
+        width: 45px;
+        margin: auto;
+        display: block;
+        cursor: all-scroll;
+    }
+
+    .left div {
+        padding: 4px 0px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        cursor: progress;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        background: none;
+        border: 2px solid white;
+        color: white;
+    }
+
+    ul {
+        padding: 0%;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 50px 10px 20px 10px;
+        padding: 10px;
+        width: 300px;
+        border-radius: 40px;
+        position: absolute;
+        right: 20px;
+
+    }
+
+    .formGroup input {
+        font-size: 10px;
+        display: block;
+        width: 250px;
+        /* text-align: center; */
+        padding: 5px 20px 5px 20px;
+        margin: 10px 5px;
+        border: none;
+        border-radius: 15px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .formGroup button {
+        display: block;
+        width: 120px;
+        /* margin: auto; */
+        margin-top: 20px; margin-bottom: 10px ;
+    }
+
+    #weight {
+        width: 230px;
+        margin: 0px 5px;
+        padding: 5px 5px 5px 10px;
+        display: inline-block;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- logo -->
+            <img src="/Img/pngkit_gym-png_2392915.png" alt="site logo">
+            <div>Turbo Fitness
+            </div>
+        </div>
+        <div class="mid">
+            <!-- navbar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- butons -->
+            <button class="btn">Call Now</button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Hardcore Fitness &#8203;</h1>
+        <form action="noaction.php">
+            <div class="formGroup">
+                <input type="text" name="Name" placeholder="enter your name">
+                <input type="text" name="Name" placeholder="enter your Age">
+                <input id="weight" type="number" name="Name" placeholder="enter your Weight"> <span>Kg</span>
+                <div> <button class="btn">Submit</button> </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
